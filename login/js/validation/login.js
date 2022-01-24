@@ -29,13 +29,28 @@ function login(event) {
         passwordInput.style.border = "solid 1px #cbd5e0";
         emailInput.style.border = "solid 1px #cbd5e0";
 
-        const obj = {
-            email: emailInput.value,
-            password: passwordInput.value
+        if (localStorage.getItem("userInfo")) {
+            const user = JSON.parse(localStorage.getItem("userInfo"));
+            password_invalid.innerHTML = "enter collect authentication";
+            if (user.email === emailInput.value && user.password === passwordInput.value) {
+                const login = JSON.parse(localStorage.getItem("userInfo"));
+                login.islogin = true;
+                localStorage.setItem("userInfo", JSON.stringify(login));
+                window.location.href = "admin/index.html";
 
+            } else {
+                alert("Please Enter Valid credentials");
+            }
+        } else {
+            const obj = {
+                email: emailInput.value,
+                password: passwordInput.value,
+                islogin: true
+            }
+
+            localStorage.setItem("userInfo", JSON.stringify(obj));
+            window.location.href = "admin/index.html";
         }
-        localStorage.setItem("userInfo", JSON.stringify(obj));
-        window.location.replace("http://127.0.0.1:5500/login/admin/index.html");
 
     }
 }

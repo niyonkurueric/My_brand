@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
 
 <head>
@@ -31,9 +33,9 @@
                     <i class="fas fa-bars">&#9776;</i>
                 </div>
 
-                <ul class="logout1">
+                <ul class="logout1" id="logout1">
                     <li>
-                        <a href="../login.html" style="color:#fff; font-size: 18px;">
+                        <a href="#" style="color:#fff; font-size: 18px;">
                             <span class="fa fa-sign-out"><i></i></span>
                             <span class="text">Logout</span>
                         </a>
@@ -73,8 +75,8 @@
                             <span class="text">Profile</span>
                         </a>
                     </li>
-                    <li id="logout" onclick="logout(log)">
-                        <a href="../login.html">
+                    <li id="logout">
+                        <a href="#">
                             <span class="fa fa-sign-out"><i></i></span>
                             <span class="text">logout</span>
                         </a>
@@ -92,169 +94,11 @@
 
         <section class="admin-dashboard">
             <div class="dashboard-summary">
-                <div class="icon-card icon-card__primary">
-                    <span class="ti-heart icon-card__icon"></span>
-                    <div class="icon-card__details">
-                        <h4 class="icon-card__number">142</h4>
-                        <span class="icon-card__text">Blogs Likes</span>
-                    </div>
-                </div>
-                <div class="icon-card icon-card__secondary">
-                    <span class="ti-eye icon-card__icon"></span>
-                    <div class="icon-card__details">
-                        <h4 class="icon-card__number">769</h4>
-                        <span class="icon-card__text">Blogs Views</span>
-                    </div>
-                </div>
-                <div class="icon-card icon-card__success">
-                    <span class="ti-comment-alt icon-card__icon"></span>
-                    <div class="icon-card__details">
-                        <h4 class="icon-card__number">24</h4>
-                        <span class="icon-card__text">Comments</span>
-                    </div>
-                </div>
-                <div class="icon-card icon-card__blue">
-                    <span class="ti-envelope icon-card__icon"></span>
-                    <div class="icon-card__details">
-                        <h4 class="icon-card__number">20</h4>
-                        <span class="icon-card__text">Contacts</span>
-                    </div>
-                </div>
+
             </div>
-            <h2 class="dashboard-title">8 Blog articles</h2>
+            <h2 class="dashboard-title"> Blog articles</h2>
             <div class="cards">
-                <div class="card">
-                    <a class="card-img" href="edit_blog.html"><img src="img/istockphoto-1300972574-170667a.jpg" alt="Image"></a>
-                    <div class="card-details">
-                        <a href="edit_blog.html" class="card-title">
-                                    Lorem ipsum dolor sit amet.
-                                </a>
-                    </div>
-                    <div class="card-icons">
-                        <div class="icon">
-                            <i class="ti-heart"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-comment"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-eye"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a class="card-img" href="edit_blog.html"><img src="img/head.webp" alt="Image"></a>
-                    <div class="card-details">
-                        <a href="edit_blog.html" class="card-title">
-                                    Lorem ipsum dolor sit amet.
-                                </a>
-                    </div>
-                    <div class="card-icons">
-                        <div class="icon">
-                            <i class="ti-heart"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-comment"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-eye"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a class="card-img" href="edit_blog.html"><img src="img/head1.jpg" alt="Image"></a>
-                    <div class="card-details">
-                        <a href="edit_blog.html" class="card-title">
-                                    Lorem ipsum dolor sit amet.
-                                </a>
-                    </div>
-                    <div class="card-icons">
-                        <div class="icon">
-                            <i class="ti-heart"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-comment"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-eye"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a class="card-img" href="edit_blog.html"><img src="img/head3.jpg" alt="Image"></a>
-                    <div class="card-details">
-                        <a href="edit_blog.html" class="card-title">
-                                    Lorem ipsum dolor sit amet.
-                                </a>
-                    </div>
-                    <div class="card-icons">
-                        <div class="icon">
-                            <i class="ti-heart"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-comment"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-eye"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a class="card-img" href="edit_blog.html"><img src="img/images.jpeg" alt="Image"></a>
-                    <div class="card-details">
-                        <a href="edit_blog.html" class="card-title">
-                                    Lorem ipsum dolor sit amet.
-                                </a>
-                    </div>
-                    <div class="card-icons">
-                        <div class="icon">
-                            <i class="ti-heart"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-comment"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-eye"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a class="card-img" href="edit_blog.html"><img src="img/head1.jpg" alt="Image"></a>
-                    <div class="card-details">
-                        <a href="edit_blog.html" class="card-title">
-                                    Lorem ipsum dolor sit amet.
-                                </a>
-                    </div>
-                    <div class="card-icons">
-                        <div class="icon">
-                            <i class="ti-heart"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-comment"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                        <div class="icon">
-                            <i class="ti-eye"></i>
-                            <span class="icon-number">0</span>
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -277,8 +121,22 @@
             </a>
         </div>
     </footer>
+    <script>
+        if (JSON.parse(localStorage.getItem("userInfo")).islogin === false) {
+            window.location.assign("http://127.0.0.1:5500/login/login.html");
+        }
+        userInfo = JSON.parse(localStorage.getItem("userInfo"));
+        let logok = document.querySelector(".logo");
+        console.log(logok)
+        if (userInfo.FirstName) {
+            logok.innerHTML = userInfo.FirstName;
+        } else {
+            logok.innerHTML = " Niyonkuru";
+        }
+    </script>
     <script src="js1/js.js"></script>
     <script src="/login/js/validation/logout.js"></script>
+    <script src="/login/js/validation/viewBlog.js"></script>
 </body>
 
 </html>
